@@ -1,0 +1,30 @@
+package ejercicios.cuaderno0.ficherosYDirectorios;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Path;
+
+public class Ej04 {
+
+	public static void main(String[] args) throws IOException {
+		Path ruta = Path.of("no-existe.txt");
+		
+		System.out.println("Ruta " + ruta);
+		System.out.println("Existe? " + Files.exists(ruta));
+	
+		try {
+			String contenido = Files.readString(ruta);
+			System.out.println(contenido);
+			
+		} catch (NoSuchFileException e) {
+			System.out.println("Al leer: NoSuchFileException");
+			System.out.println(" getMessage(): " + e.getMessage());
+		}
+		
+		//sale false con File pero no dice porque
+		System.out.println(new java.io.File("no-existe.txt").delete()); //sale 
+
+	}
+
+}

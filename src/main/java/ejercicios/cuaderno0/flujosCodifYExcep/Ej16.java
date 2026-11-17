@@ -1,4 +1,4 @@
-package ejercicios.cuaderno0;
+package ejercicios.cuaderno0.flujosCodifYExcep;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -43,5 +43,12 @@ public class Ej16 {
 			System.out.println("ISO-8859-1 leído como UTF-8 (atajo): "
 					+ "MalformedInputException, " + e.getMessage());
 		}
+		
+//		BufferedReader r1 = new BufferedReader(new InputStreamReader(
+//				Files.newInputStream(utf8), StandardCharsets.UTF_8));
+//
+//		BufferedReader r2 = Files.newBufferedReader(utf8, StandardCharsets.UTF_8);
 	}
 }
+
+
