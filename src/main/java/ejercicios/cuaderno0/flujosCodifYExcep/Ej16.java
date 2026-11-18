@@ -48,6 +48,10 @@ public class Ej16 {
 //				Files.newInputStream(utf8), StandardCharsets.UTF_8));
 //
 //		BufferedReader r2 = Files.newBufferedReader(utf8, StandardCharsets.UTF_8);
+		
+//		Ficheros pequeños  Files.readString(ruta)
+//		12 16 20 21 26 27 28 29 30 36 38 39 40
+		
 	}
 }
 

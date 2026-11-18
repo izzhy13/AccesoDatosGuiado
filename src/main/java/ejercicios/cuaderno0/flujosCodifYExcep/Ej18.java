@@ -24,13 +24,13 @@ public class Ej18 {
 		for (int i = 1; i <= 3; i++) {
 			Files.writeString(log, "Línea " + i + "\n",
 					StandardOpenOption.CREATE, StandardOpenOption.APPEND);
-		} //append para que no borre y create por si no existe
+		} //append para que no borre y create por si no existe siemprwe jutnos
 		
 		System.out.println("Con CREATE y APPEND:");
 		System.out.print(Files.readString(log));
 		
 		Path nuevo = Path.of("datos", "no-esta.txt");
-		//Files.deleteIfExists(nuevo);
+		Files.deleteIfExists(nuevo);
 		
 		try {
 			Files.writeString(nuevo, "x", StandardOpenOption.APPEND);
